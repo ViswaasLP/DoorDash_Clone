@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 
             $res2 = mysqli_query($conn,$sql2);
 
-            if(res2==TRUE){
+            if($res2==TRUE){
                 $_SESSION['change-pwd'] = "<div class='success'>Password is changed successfully.</div>";
                 header('location:'.URL.'admin/manage-admin.php'); 
             }else{
